@@ -1,0 +1,7 @@
+package array1way;
+
+public class ex1 {
+    public static void main(String[] args) {
+
+    }
+}

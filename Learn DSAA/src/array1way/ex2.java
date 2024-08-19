@@ -14,6 +14,8 @@ public class ex2 {
             System.out.println("Số phần tử mảng:");
             n = input.nextInt();
             number = addArray(n, input);
+            System.out.println("Check Symmetrical:");
+            System.out.println(checkSymmetrical(number));
             t--;
         }
     }
@@ -36,5 +38,13 @@ public class ex2 {
         System.out.println();
     }
 
+    public static String checkSymmetrical(int[] numbers){
+        for (int i = 0; i < numbers.length / 2; i++) {
+            if (numbers[i] != numbers[numbers.length - 1 - i]){
+                return "No";
+            }
+        }
+        return "Yes";
+    }
 
 }
